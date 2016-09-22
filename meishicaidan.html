@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>营养美食网-营养美食健康</title>
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.booklet.1.1.0.min.js"></script>
+<script src="js/nav.js"></script>
+<script>
+$(function(){
+    	$('#index_nav>ul>li').hover(function(){
+			//document.title = $(this).position().left;
+			var xx = $(this).position().left;
+			$('.line').stop().animate({left:xx},'fast');	
+		},function(){
+			$('.line').stop().animate({left:0},'fast');
+		});
+});
+</script>
+</head>
+<body>
+ <div id="index_navbg">
+      	<div id="index_navtop" class="clear">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <div class="nav_login">
+            	<a href="logoin.html">
+                	登录 / 注册
+                </a>
+            </div>
+            <div class="nav_loginrt">
+            	<a href="#">
+            		<img src="images/loginqq01.png">
+                </a>
+                	<a href="#">
+            		<img src="images/logoinsina01.png">
+                </a>
+            </div>
+        </div>
+<div id="index_nav">
+	<ul class="nav-main">
+    	<li class="line"></li>
+        <li><a href="index.html" target="_blank">首页</a></li>
+            <li id="li-1">
+            <a href="caipu.html" target="_blank">菜谱</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-2">
+        	<a href="shicai.html" target="_blank">食材</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-3">
+        	<a href="jiankang.html" target="_blank">健康</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-4">
+        	<a href="meishidaren.html" target="_blank">美食达人</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li>
+        	<a href="meishicaidan.html" target="_blank">美食菜单</a
+        ></li>
+	</ul>
+	<div id="nav_list-1" class="nav_hidden nav_hidden-index">
+		<ul>
+			<li>中华菜谱</li>
+			<li>西式菜谱</li>
+			<li>韩国料理</li>
+            <li>日本料理</li>
+		</ul>
+	</div>
+	<div id="nav_list-2" class="nav_hidden nav_hidden-us">
+		<ul>
+        	<li>肉类食材</li>
+			<li>蔬菜食材</li>
+			<li>水果食材</li>
+		</ul>
+	</div>
+	<div id="nav_list-3" class="nav_hidden nav_hidden-info">
+		<ul>
+			<li>健康咨询</li>
+			<li>健康新闻</li>
+			<li>健康菜谱</li>
+		</ul>
+	</div>
+    <div id="nav_list-4" class="nav_hidden nav_hidden-info nav_hidden-last">
+		<ul>
+			<li>热门达人</li>
+			<li>推荐达人</li>
+		</ul>
+	</div>
+</div>
+
+    <div class="nav_iput">
+	<input type="text" class="nav_input" placeholder="需找你想要的美味" onFocus="this.placeholder=''" onBlur="this.placeholder='需找你想要的美味'"> <button type="submit" name="sousuo">搜索</button></div>
+</div>
+</div>
+   <!-- ---------------------------------以上是nav内容--------------------------->
+   <div class="cd_bg">
+   		<div class="cd_nav">
+        	<ul class="clear">
+            	<li style="font-size:18px;">中华菜单：</li>
+                <li><a href="#">川菜菜单</a></li>
+                <li><a href="#">粤菜菜单</a></li>
+                <li><a href="#">湘菜菜单</a></li>
+                <li><a href="#">西北菜菜单</a></li>
+                <li><a href="#">更多菜单</a></li>
+            </ul>
+            <ul>
+            	<li style="font-size:18px;">西式菜单：</li>
+                <li><a href="#">法国大餐</a></li>
+                <li><a href="#">意大利餐</a></li>
+                <li><a href="#">美式快餐</a></li>
+                <li><a href="#">西班牙料理</a></li>
+                <li><a href="#">更多菜单</a></li>
+            </ul>
+        </div>
+   		<h1><i>欢迎点餐</i></h1>
+      <div class="book_wrapper">
+        <a id="next_page_button"></a>
+        <a id="prev_page_button"></a>
+        <div id="loading" class="loading">Loading pages...</div>
+        <div id="mybook" style="display:none;">
+            <div class="b-load">
+                <div class="cd_bookimg">
+                    <img src="images/cd_book01.jpg" height="165" width="305">
+                    <h1>鱼香肉丝</h1>
+                    <p>鱼香肉丝（英文名：Fish deer）是一道汉族传统名菜，以鱼香调味而得名。相传灵感来自老菜泡椒肉丝，民国年间由四川籍厨师创制而成。
+    主料为猪肉、黑木耳，辅料因做法而各异，但多为胡萝卜、竹笋、辣椒等。猪肉选用三成肥、七成瘦的切丝滑炒，吃起来肉丝质地鲜嫩。
+    成菜色红润、肉嫩、质鲜、富鱼香味。其鱼香味并不来自鱼，而是由泡红辣椒、葱、姜、蒜、糖、盐、酱油等调味品调制而成。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book02.jpg" width="305" height="165">
+                    <h1>宫保杏鲍菇</h1>
+                    <p>杏鲍菇营养丰富，富含蛋白质、碳水化合物、维生素及钙、镁、铜、锌等矿物质，可以提高人体免疫功能，对人体具有抗癌、降血脂、润肠胃以及美容等作用。杏鲍菇具有降血脂、降胆固醇、促进胃肠消化、增强机体免疫能力、防止心血管病等功效。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book03.jpg" height="165" width="305">
+                    <h1>红烧肉</h1>
+                    <p>红烧肉是热菜菜谱之一。以五花肉为制作主料，最好选用肥瘦相间的三层肉（五花肉）来做。红烧肉的烹饪技巧以砂锅为主，肥瘦相间，香甜松软，入口即化。红烧肉在我国各地流传甚广，是一道著名的大众菜肴。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book04.jpg" height="165" width="305">
+                    <h1>烧腐竹</h1>
+                    <p>烧腐竹是一道美味可口的汉族名菜，属于粤菜系素食菜谱之一。此菜色泽淡雅，味爽筋道，咸鲜微甜，营养可口。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book05.jpg" height="165" width="305">
+                    <h1>地三鲜</h1>
+                    <p>"地三鲜"是很有特色的一道东北汉族传统家常菜，选用了三种地里时令新鲜的食材：茄子、土豆和青椒来搭配，不仅在于鲜浓的味道、天然绿色的食材，更胜于它涵盖多种食材的营养，让三味非常普通的蔬菜做成鲜爽无比的佳肴。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book06.jpg" height="165" width="305">
+                    <h1>糖醋鱼</h1>
+                    <p>糖醋鱼，是菜谱里的常见菜，糖醋鱼口味属于糖醋味，做法属烧菜类，鲜嫩无比、酸甜可口 ，外焦里嫩，色泽金黄, 甜咸适口。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book07.jpg" height="165" width="305">
+                    <h1>黄焖羊肉</h1>
+                    <p>黄焖羊肉是西北经典的名菜之一。此菜口味香酥， 肥而不腻。是清朝末代皇帝——爱新觉罗·溥仪的御膳菜肴。羊肉富有营养，具有暖中补气、滋养、御风寒、生肌健力等功效</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book08.jpg" height="165" width="305">
+                    <h1>辣子鸡</h1>
+                    <p>辣子鸡是一道经典的川渝地区的汉族传统名肴，因缘于重庆歌乐山而得名。此菜成菜色泽棕红油亮，麻辣味浓。咸鲜醇香，略带回甜。一般以鸡为主料，加上葱、干辣椒、花椒、盐、胡椒、味精等多种材料精制而成，营养丰富，味道鲜美，虽然是同一道菜，各地制作也各有特色。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book09.jpg" height="165" width="305">
+                    <h1>阳春面</h1>
+                    <p>阳春面是苏式汤面的一种，又称光面、清汤面或清汤光面，汤清味鲜，清淡爽口。是江南地区著名的汉族面食小吃，作为淮安的一大特色。民间习惯称阴历十月为小阳春，上海市井隐语以十为阳春。以前此面每碗售钱十文，故称阳春面。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book10.jpg" height="165" width="305">
+                    <h1>兰州牛肉面</h1>
+                    <p>兰州牛肉面，又称兰州清汤牛肉面，是“中国十大面条”之一，是甘肃省兰州地区的清真风味小吃。它以“汤镜者清，肉烂者香，面细者精”的独特风味和“一清二白三红四绿五黄”，一清（汤清）、二白（萝卜白）、三红（辣椒油红）、四绿（香菜、蒜苗绿）、五黄（面条黄亮），赢得了国内乃至全世界顾客的好评。并被中国烹饪协会评为三大中式快餐之一，得到美誉“中华第一面”。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book11.jpg" height="165" width="305">
+                    <h1>紫菜蛋花汤</h1>
+                    <p>紫菜蛋花汤属于一款速食汤，是四川传统餐后汤，其主料紫菜和鸡蛋的营养价值都比较高，因其制作简单方便，营养丰富而广受喜爱紫菜属中叶状藻体可食的种群，其蛋白质、铁、磷、钙、核黄素、胡萝卜素[1]  等含量居各种蔬菜的之冠，故紫菜又有“营养宝库”的美称。。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">点餐</a>
+                </div>
+                <div class="cd_bookimg">
+                    <img src="images/cd_book12.jpg" height="165" width="305">
+                    <h1>青菜豆腐</h1>
+                    <p>青菜豆腐是一道色香味俱全的汉族名肴，江南地区尤为流行。 此菜汤白绿相间，色泽鲜艳，豆腐软嫩，汤味鲜美，清爽宜人，非常适合夏季食用。青菜豆腐汤的做法也比较简单。鸡毛菜少许，嫩豆腐一盒。将豆腐取出，切小丁。入锅，倒入高汤。加入盐、糖（少许）、胡椒粉；倒入豆腐丁，开锅后加入稍浓的生粉水；鸡毛菜切豆腐粒大小，放入锅中片刻，起锅。点少许麻油即可出锅。</p>
+                    <a href="#" target="_blank" class="article">预定</a>
+                    <a href="#" target="_blank" class="demo">Demo</a>
+                </div>
+           	 </div>
+        	</div>
+    	</div>
+   </div>
+
+ <!-- ---------------------------------以上是菜单内容--------------------------->
+ 	<div class="idx_btmbg clear">
+    	<div class="idx_btm">
+            <ul class="idx_btmnews">
+                <li><em>懂得生活的人，天天都来这里</em></li>
+            </ul>
+            <ul class="idx_btmmain clear">
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">免责声明</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p>京ICP证150335号/京公网安备11010802009977 Copyright © 2003-2016 yangshimeishi CO.,LTD.</p>
+       </div>
+    </div>
+    <!-- ---------------------------------以上是版权内容--------------------------->
+<div id="share">
+<a id="totop" title=""></a>
+<a href="#" target="_blank" class="sina"></a>
+<a href="#"  target="_blank" class="tencent"></a>
+</div>
+<!-- ---------------------------------以上是GOTOP内容--------------------------->
+</body>
+<script type="text/javascript">
+$(function() {
+	var $mybook 		= $('#mybook');
+	var $bttn_next		= $('#next_page_button');
+	var $bttn_prev		= $('#prev_page_button');
+	var $loading		= $('#loading');
+	var $mybook_images	= $mybook.find('img');
+	var cnt_images		= $mybook_images.length;
+	var loaded			= 0;
+	//preload all the images in the book,
+	//and then call the booklet plugin
+
+	$mybook_images.each(function(){
+		var $img 	= $(this);
+		var source	= $img.attr('src');
+		$('<img/>').load(function(){
+			++loaded;
+			if(loaded == cnt_images){
+				$loading.hide();
+				$bttn_next.show();
+				$bttn_prev.show();
+				$mybook.show().booklet({
+					name:               null,                            // name of the booklet to display in the document title bar
+					width:              800,                             // container width
+					height:             500,                             // container height
+					speed:              600,                             // speed of the transition between pages
+					direction:          'LTR',                           // direction of the overall content organization, default LTR, left to right, can be RTL for languages which read right to left
+					startingPage:       0,                               // index of the first page to be displayed
+					easing:             'easeInOutQuad',                 // easing method for complete transition
+					easeIn:             'easeInQuad',                    // easing method for first half of transition
+					easeOut:            'easeOutQuad',                   // easing method for second half of transition
+
+					closed:             true,                           // start with the book "closed", will add empty pages to beginning and end of book
+					closedFrontTitle:   null,                            // used with "closed", "menu" and "pageSelector", determines title of blank starting page
+					closedFrontChapter: null,                            // used with "closed", "menu" and "chapterSelector", determines chapter name of blank starting page
+					closedBackTitle:    null,                            // used with "closed", "menu" and "pageSelector", determines chapter name of blank ending page
+					closedBackChapter:  null,                            // used with "closed", "menu" and "chapterSelector", determines chapter name of blank ending page
+					covers:             false,                           // used with  "closed", makes first and last pages into covers, without page numbers (if enabled)
+
+					pagePadding:        10,                              // padding for each page wrapper
+					pageNumbers:        true,                            // display page numbers on each page
+
+					hovers:             false,                            // enables preview pageturn hover animation, shows a small preview of previous or next page on hover
+					overlays:           false,                            // enables navigation using a page sized overlay, when enabled links inside the content will not be clickable
+					tabs:               false,                           // adds tabs along the top of the pages
+					tabWidth:           60,                              // set the width of the tabs
+					tabHeight:          20,                              // set the height of the tabs
+					arrows:             false,                           // adds arrows overlayed over the book edges
+					cursor:             'pointer',                       // cursor css setting for side bar areas
+
+					hash:               false,                           // enables navigation using a hash string, ex: #/page/1 for page 1, will affect all booklets with 'hash' enabled
+					keyboard:           true,                            // enables navigation with arrow keys (left: previous, right: next)
+					next:               $bttn_next,          			// selector for element to use as click trigger for next page
+					prev:               $bttn_prev,          			// selector for element to use as click trigger for previous page
+
+					menu:               null,                            // selector for element to use as the menu area, required for 'pageSelector'
+					pageSelector:       false,                           // enables navigation with a dropdown menu of pages, requires 'menu'
+					chapterSelector:    false,                           // enables navigation with a dropdown menu of chapters, determined by the "rel" attribute, requires 'menu'
+
+					shadows:            true,                            // display shadows on page animations
+					shadowTopFwdWidth:  166,                             // shadow width for top forward anim
+					shadowTopBackWidth: 166,                             // shadow width for top back anim
+					shadowBtmWidth:     50,                              // shadow width for bottom shadow
+
+					before:             function(){},                    // callback invoked before each page turn animation
+					after:              function(){}                     // callback invoked after each page turn animation
+				});
+			}
+		}).attr('src',source);
+	});
+	
+});
+</script>
+<script>
+$(function(){
+        $("#totop").hide();
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#totop").fadeIn();
+                }
+                else
+                {
+                    $("#totop").fadeOut();
+                }
+            });
+            $("#totop").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    }); 
+</script>
+</html>

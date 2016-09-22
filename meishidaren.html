@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>营养美食网-营养美食健康</title>
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="font/iconfont.css" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/nav.js"></script>
+<script>
+$(function(){
+    	$('#index_nav>ul>li').hover(function(){
+			//document.title = $(this).position().left;
+			var xx = $(this).position().left;
+			$('.line').stop().animate({left:xx},'fast');	
+		},function(){
+			$('.line').stop().animate({left:0},'fast');
+		});
+});
+</script>
+</head>
+<body>
+ <div id="index_navbg">
+      	<div id="index_navtop" class="clear">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <div class="nav_login">
+            	<a href="logoin.html">
+                	登录 / 注册
+                </a>
+            </div>
+            <div class="nav_loginrt">
+            	<a href="#">
+            		<img src="images/loginqq01.png">
+                </a>
+                	<a href="#">
+            		<img src="images/logoinsina01.png">
+                </a>
+            </div>
+        </div>
+<div id="index_nav">
+	<ul class="nav-main">
+    	<li class="line"></li>
+        <li><a href="index.html" target="_blank">首页</a></li>
+            <li id="li-1">
+            <a href="caipu.html" target="_blank">菜谱</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-2">
+        	<a href="shicai.html" target="_blank">食材</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-3">
+        	<a href="jiankang.html" target="_blank">健康</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-4">
+        	<a href="meishidaren.html" target="_blank">美食达人</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li>
+        	<a href="meishicaidan.html" target="_blank">美食菜单</a
+        ></li>
+	</ul>
+	<div id="nav_list-1" class="nav_hidden nav_hidden-index">
+		<ul>
+			<li>中华菜谱</li>
+			<li>西式菜谱</li>
+			<li>韩国料理</li>
+            <li>日本料理</li>
+		</ul>
+	</div>
+	<div id="nav_list-2" class="nav_hidden nav_hidden-us">
+		<ul>
+        	<li>肉类食材</li>
+			<li>蔬菜食材</li>
+			<li>水果食材</li>
+		</ul>
+	</div>
+	<div id="nav_list-3" class="nav_hidden nav_hidden-info">
+		<ul>
+			<li>健康咨询</li>
+			<li>健康新闻</li>
+			<li>健康菜谱</li>
+		</ul>
+	</div>
+    <div id="nav_list-4" class="nav_hidden nav_hidden-info nav_hidden-last">
+		<ul>
+			<li>热门达人</li>
+			<li>推荐达人</li>
+		</ul>
+	</div>
+</div>
+
+    <div class="nav_iput">
+	<input type="text" class="nav_input" placeholder="需找你想要的美味" onFocus="this.placeholder=''" onBlur="this.placeholder='需找你想要的美味'"> <button type="submit" name="sousuo">搜索</button></div>
+</div>
+</div>
+   <!-- ---------------------------------以上是nav内容--------------------------->
+ 	<div class="msdr_main">
+        <ul class="msdr_top clear">
+            <h2>美食达人推荐</h2>
+            <li style="margin-left:8px">
+                <div class="toplist">
+                    <img src="images/msdr_01.jpg" width="100" height="100">
+                    <h6><a href="#">美味不停留</a>&nbsp;<span class="iconfont">&#xe8bb;</span></h6>
+                    <span><a href="#">+ 关注</a></span>
+                </div>
+                <p>开心快乐每一天，美食就在身边</p>
+                <ul>
+                    <li>
+                        <h3 style="color:#6BDDFA">达人推荐：</h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的菜单</a></h3>
+                        <h6 class="fr"><a href="#">15篇菜谱</a></h6>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的文章</a></h3>
+                        <h6 class="fr"><a href="#">10篇文章</a></h6>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的收藏</a></h3>
+                        <h6 class="fr"><a href="#">6篇收藏</a></h6>
+                    </li>
+                </ul>
+            </li>
+    		<li>
+                <div class="toplist" style="background:#EEFA05">
+                    <img src="images/msdr_02.jpg" width="100" height="100">
+                    <h6><a href="#">安之若素</a>&nbsp;<span class="iconfont">&#xe8bb;</span></h6>
+                    <span><a href="#">+ 关注</a></span>
+                </div>
+                <p>美食美客</p>
+                <ul>
+                    <li>
+                        <h3 style="color:#F7EB13">达人推荐：</h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的菜单</a></h3>
+                        <h6 class="fr"><a href="#">15篇菜谱</a></h6>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的文章</a></h3>
+                        <h6 class="fr"><a href="#">10篇文章</a></h6>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的收藏</a></h3>
+                        <h6 class="fr"><a href="#">6篇收藏</a></h6>
+                    </li>
+                </ul>
+            </li>
+            <li style="margin-left:5px">
+                <div class="toplist" style="background:#F78F04">
+                    <img src="images/msdr_03.jpg" width="100" height="100">
+                    <h6><a href="#">畅享美味</a>&nbsp;<span class="iconfont">&#xe8bb;</span></h6>
+                    <span><a href="#">+ 关注</a></span>
+                </div>
+                <p>美味就在身边</p>
+                <ul>
+                    <li>
+                        <h3 style="color:#F78F04">达人推荐</h3>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的菜单</a></h3>
+                        <h6 class="fr"><a href="#">15篇菜谱</a></h6>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的文章</a></h3>
+                        <h6 class="fr"><a href="#">10篇文章</a></h6>
+                    </li>
+                    <li>
+                        <h3><a href="#">我的收藏</a></h3>
+                        <h6 class="fr"><a href="#">6篇收藏</a></h6>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- ---------------------------------以上推荐美食达人--------------------------->
+        
+        <div class="msdr_mid clear">
+            <h2>美食达人榜单</h2>
+            <ul>
+            	<li>
+                	<h3>新晋达人</h3>
+                    <ul class="msdr_midlist clear">
+                    	<li>
+                        	<img src="images/msdr_04.jpg" width="60" height="60">
+                            <a href="#">走在他乡&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                        <li>
+                        	<img src="images/msdr_05.jpg" width="60" height="60">
+                            <a href="#">麻辣香锅&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                        <li>
+                        	<img src="images/msdr_06.jpg" width="60" height="60">
+                            <a href="#">海阔天空&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                	<h3>热门达人</h3>
+                    <ul class="msdr_midlist">
+                    	<li>
+                        	<img src="images/msdr_07.jpg" width="60" height="60">
+                            <a href="#">美美的家&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                        <li>
+                        	<img src="images/msdr_08.jpg" width="60" height="60">
+                            <a href="#">杰西卡的田园&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                        <li>
+                        	<img src="images/msdr_09.jpg" width="60" height="60">
+                            <a href="#">土豆丝卷饼&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                		<h3>成就达人</h3>
+                    <ul class="msdr_midlist">
+                    	<li>
+                        	<img src="images/msdr_10.gif" width="60" height="60">
+                            <a href="#">食色&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                        <li>
+                        	<img src="images/msdr_11.jpg" width="60" height="60">
+                            <a href="#">通话厨房&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                        <li>
+                        	<img src="images/msdr_12.jpg" width="60" height="60">
+                            <a href="#">白天不懂夜&nbsp;<span class="iconfont">&#xe8bb;</span></a>
+                            <span><a href="#">+&nbsp;关注</a></span>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+       
+
+    <!-- ---------------------------------以上推荐达人榜单内容--------------------------->
+    	<ul class="msdr_btm">
+        	<h2>一周达人秀</h2>
+        	<li>
+            	<a href="#">
+            		<img src="images/msdr_show01.jpg" width="312" height="300">
+                </a>
+                <h6>
+                	<a href="#">自制牛轧糖</a>
+                </h6>
+                <span>
+                	<img src="images/msfr_show001.jpg" width="60" height="60">
+                </span>
+                <h5>
+                	<a href="#"><span class="iconfont">&#xe8bb;</span>&nbsp;仰望星空</a>
+                </h5>
+            </li>
+            <li>
+            	<a href="#">
+            		<img src="images/msdr_show02.jpg" width="312" height="300">
+                </a>
+                <h6>
+                	<a href="#">尖椒炒肉</a>
+                </h6>
+                <span>
+                	<img src="images/msdr_show002.jpeg" width="60" height="60">
+                </span>
+                <h5>
+                	<a href="#"><span class="iconfont">&#xe8bb;</span>&nbsp;风吹过夏天</a>
+                </h5>
+            </li>
+            <li>
+            	<a href="#">
+            		<img src="images/msdr_show03.jpeg" width="312" height="300">
+                </a>
+                <h6>
+                	<a href="#">鸡蛋点心</a>
+                </h6>
+                <span>
+                	<img src="images/msdr_show003.jpg" width="60" height="60">
+                </span>
+                <h5>
+                	<a href="#"><span class="iconfont">&#xe8bb;</span>&nbsp;稻香</a>
+                </h5>
+            </li>
+            <li>
+            	<a href="#">
+            		<img src="images/msdr_show04.jpg" width="312" height="300">
+                </a>
+                <h6>
+                	<a href="#">方糖饼干</a>
+                </h6>
+                <span>
+                	<img src="images/msdr_show004.jpeg" width="60" height="60">
+                </span>
+                <h5>
+                	<a href="#"><span class="iconfont">&#xe8bb;</span>&nbsp;辛德瑞拉</a>
+                </h5>
+            </li>
+            <li>
+            	<a href="#">
+            		<img src="images/msdr_show07.jpg" width="312" height="300">
+                </a>
+                <h6>
+                	<a href="#">珍珠米团</a>
+                </h6>
+                <span>
+                	<img src="images/msdr_show005.jpg" width="60" height="60">
+                </span>
+                <h5>
+                	<a href="#"><span class="iconfont">&#xe8bb;</span>&nbsp;那些年</a>
+                </h5>
+            </li>
+            <li>
+            	<a href="#">
+            		<img src="images/msdr_show06.jpg" width="312" height="300">
+                </a>
+                <h6>
+                	<a href="#">自制枣糕</a>
+                </h6>
+                <span>
+                	<img src="images/msdr_show006.jpg" width="60" height="60">
+                </span>
+                <h5>
+                	<a href="#"><span class="iconfont">&#xe8bb;</span>&nbsp;雨一直下</a>
+                </h5>
+            </li>
+
+        </ul>
+    </div>
+   </div>
+ 	<div class="idx_btmbg clear">
+    	<div class="idx_btm">
+            <ul class="idx_btmnews">
+                <li><em>懂得生活的人，天天都来这里</em></li>
+            </ul>
+            <ul class="idx_btmmain clear">
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">免责声明</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p>京ICP证150335号/京公网安备11010802009977 Copyright © 2003-2016 yangshimeishi CO.,LTD.</p>
+       </div>
+    </div>
+    <!-- ---------------------------------以上是版权内容--------------------------->
+<div id="share">
+<a id="totop" title=""></a>
+<a href="#" target="_blank" class="sina"></a>
+<a href="#"  target="_blank" class="tencent"></a>
+</div>
+<!-- ---------------------------------以上是GOTOP内容--------------------------->
+</body>
+<script>
+$(function(){
+        $("#totop").hide();
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#totop").fadeIn();
+                }
+                else
+                {
+                    $("#totop").fadeOut();
+                }
+            });
+            $("#totop").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    }); 
+</script>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>营养美食网-营养美食首页</title>
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.sliphover.min.js"></script>
+<script src="js/nav.js"></script>
+<script>
+$(function(){
+    	$('#index_nav>ul>li').hover(function(){
+			//document.title = $(this).position().left;
+			var xx = $(this).position().left;
+			$('.line').stop().animate({left:xx},'fast');	
+		},function(){
+			$('.line').stop().animate({left:0},'fast');
+		});
+});
+</script>
+</head>
+<body>
+ <div id="index_navbg">
+      	<div id="index_navtop" class="clear">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <div class="nav_login">
+            	<a href="logoin.html">
+                	登录 / 注册
+                </a>
+            </div>
+            <div class="nav_loginrt">
+            	<a href="#">
+            		<img src="images/loginqq01.png">
+                </a>
+                	<a href="#">
+            		<img src="images/logoinsina01.png">
+                </a>
+            </div>
+        </div>
+<div id="index_nav">
+	<ul class="nav-main">
+    	<li class="line"></li>
+        <li><a href="index.html" target="_blank">首页</a></li>
+            <li id="li-1">
+            <a href="caipu.html" target="_blank">菜谱</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-2">
+        	<a href="shicai.html" target="_blank">食材</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-3">
+        	<a href="jiankang.html" target="_blank">健康</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li id="li-4">
+        	<a href="meishidaren.html" target="_blank">美食达人</a>
+            <span><img src="images/nav_icon.png" width="7" height="7"></span>
+        </li>
+		<li>
+        	<a href="meishicaidan.html" target="_blank">美食菜单</a
+        ></li>
+	</ul>
+	<div id="nav_list-1" class="nav_hidden nav_hidden-index">
+		<ul>
+			<li>中华菜谱</li>
+			<li>西式菜谱</li>
+			<li>韩国料理</li>
+            <li>日本料理</li>
+		</ul>
+	</div>
+	<div id="nav_list-2" class="nav_hidden nav_hidden-us">
+		<ul>
+        	<li>肉类食材</li>
+			<li>蔬菜食材</li>
+			<li>水果食材</li>
+		</ul>
+	</div>
+	<div id="nav_list-3" class="nav_hidden nav_hidden-info">
+		<ul>
+			<li>健康咨询</li>
+			<li>健康新闻</li>
+			<li>健康菜谱</li>
+		</ul>
+	</div>
+    <div id="nav_list-4" class="nav_hidden nav_hidden-info nav_hidden-last">
+		<ul>
+			<li>热门达人</li>
+			<li>推荐达人</li>
+		</ul>
+	</div>
+</div>
+
+    <div class="nav_iput">
+	<input type="text" class="nav_input" placeholder="需找你想要的美味" onFocus="this.placeholder=''" onBlur="this.placeholder='需找你想要的美味'"> <button type="submit" name="sousuo">搜索</button></div>
+</div>
+</div>
+   <!-- ---------------------------------以上是nav内容--------------------------->
+ <!-- ---------------------------------以上是导航内容--------------------------->
+ 	<div class="sc_hlbbg">
+    	<div class="sc_hlbbanner">
+        	<img src="images/sc_hlbbn.png">
+        </div>
+		<div class="sc_hlbtop">
+        	<h3>食材百科</h3>
+            <div class="sc_hlbtoplt">
+            	<h5><a href="#">胡萝卜</a></h5>
+                <ul>
+       				<li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <p>
+                	<a href="#">胡萝卜，别名红萝卜、丁香萝卜、葫芦菔金，又被称为胡芦菔、红菜头、黄萝卜等，有地下“小人参”之称，是伞形二年生草本植物，以呈肉质的根作为蔬菜来食用。 胡萝卜每100克鲜重含1.67～12.1毫克胡萝卜素，含量高于番茄的5～7倍，食用后经肠胃消化分解成维生素A，能防治夜盲症和呼吸道疾病。可炒食、煮食、生吃、酱渍、腌制等，耐贮藏。分布于世界各地，中国南北方都有栽培，产量占根菜类的第二位，可抗癌。胡萝卜是一种质脆味美、营养丰富的家常蔬菜。中医认为它可以补中气、健胃消食、壮元阳、安五脏，治疗消化不良、久痢、咳嗽、夜盲症等有较好疗效，故被誉为“东方小人参”。用油炒熟后吃，在人体内可转化为维生素A，提高机体免疫力，间接消灭癌细胞。美国科学家的最新研究又证实：每天吃两根胡萝卜，可使血中胆固醇降低10%~20%；每天吃三根胡萝卜，有助于预防心脏疾病和肿瘤。</a>
+                </p>
+            </div>
+            <ul class="sc_hlbrt">
+            	<li>
+                	<img src="images/sc_hlb01.jpg" width="280" height="228">
+                </li>
+                <li>
+                	<img src="images/sc_hlb02.jpg" width="280" height="228">
+                </li>
+            </ul>
+        </div>
+        
+         <!-- ---------------------------------以上是食材百科内容--------------------------->
+         
+        <div class="sc_hlbshow clear">
+        	<h3>食材菜谱</h3>
+            <ul class="clear">
+            	<li>
+                	<a href="#">
+                    	<img src="images/sc_hlbshow01.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜汁</a>
+                    </p>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/sc_hlbshow02.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜饺子</a>
+                    </p>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/sc_hlbshow03.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜面</a>
+                    </p>>
+                </li>
+                <li>
+                <a href="#">
+                    	<img src="images/sc_hlbshow04.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜泥</a>
+                    </p>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/sc_hlbshow05.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜面包</a>
+                    </p>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/sc_hlbshow06.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜粥</a>
+                    </p>
+                </li>
+                <li>
+                	<a href="#">
+                    	<img src="images/sc_hlbshow07.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜酱</a>
+                    </p>
+                </li>
+                <li>
+        <a href="#">
+                    	<img src="images/sc_hlbshow08.jpg" width="220" height="200" title="烹饪">
+                    </a>
+                    <p>
+                    	<a href="#">胡萝卜干</a>
+                    </p>
+                </li>
+            </ul>
+            <h6>
+            	<a href="#">
+                	<i>查看更多胡萝卜的做法</i>
+                	<span>>>></span>
+                </a>
+                
+            </h6>
+        </div>
+    </div>
+    
+     <!-- ---------------------------------以上是食材食谱内容--------------------------->
+ 
+ 	<div class="idx_btmbg clear">
+    	<div class="idx_btm">
+            <ul class="idx_btmnews">
+                <li><em>懂得生活的人，天天都来这里</em></li>
+            </ul>
+            <ul class="idx_btmmain clear">
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">免责声明</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p>京ICP证150335号/京公网安备11010802009977 Copyright © 2003-2016 yangshimeishi CO.,LTD.</p>
+       </div>
+    </div>
+    <!-- ---------------------------------以上是底部内容--------------------------->
+<div id="share">
+<a id="totop" title=""></a>
+<a href="#" target="_blank" class="sina"></a>
+<a href="#"  target="_blank" class="tencent"></a>
+</div>
+<button id="zan">赞</button>
+
+$("#zan").toggle(function(){
+//点赞的ajax（）
+},
+function(){
+//取消点赞的ajax（）
+});
+<!-- ---------------------------------以上是GOTOP内容--------------------------->
+</body>
+<script>
+$(function(){
+    $('.sc_hlbshow').sliphover(
+		{ 
+			backgroundColor: 'rgba(235,128,128,.7)',
+			textAlign: 'center',
+		}
+		
+	);
+});
+</script>
+<script>
+$(function(){
+        $("#totop").hide();
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#totop").fadeIn();
+                }
+                else
+                {
+                    $("#totop").fadeOut();
+                }
+            });
+            $("#totop").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    }); 
+</script>
+
+</html>

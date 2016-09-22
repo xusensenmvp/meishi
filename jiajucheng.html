@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>营养美食网-营养美食家居城</title>
+
+<link rel="stylesheet" href="css/index.css" type="text/css">
+<link rel="stylesheet" href="font/iconfont.css" type="text/css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/nav.js"></script>
+<script>
+$(function(){
+    	$('#index_nav>ul>li').hover(function(){
+			//document.title = $(this).position().left;
+			var xx = $(this).position().left;
+			$('.line').stop().animate({left:xx},'fast');	
+		},function(){
+			$('.line').stop().animate({left:0},'fast');
+		});
+});
+</script>
+</head>
+<body>
+<div id="index_navbg">
+     	<div id="index_navtop" class="clear">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+            <div class="nav_login">
+            	<a href="logoin.html">
+                	登录 / 注册
+                </a>
+            </div>
+            <div class="nav_loginrt">
+            	<a href="#">
+            		<img src="images/loginqq01.png">
+                </a>
+                	<a href="#">
+            		<img src="images/logoinsina01.png">
+                </a>
+            </div>
+        </div>
+    <div id="index_nav">
+        <ul class="nav-main">
+            <li class="line"></li>
+            <li><a href="index.html" target="_blank">首页</a></li>
+                <li id="li-1">
+                <a href="caipu.html" target="_blank">菜谱</a>
+                <span><img src="images/nav_icon.png" width="7" height="7"></span>
+            </li>
+            <li id="li-2">
+                <a href="shicai.html" target="_blank">食材</a>
+                <span><img src="images/nav_icon.png" width="7" height="7"></span>
+            </li>
+            <li id="li-3">
+                <a href="jiankang.html" target="_blank">健康</a>
+                <span><img src="images/nav_icon.png" width="7" height="7"></span>
+            </li>
+            <li id="li-4">
+                <a href="meishidaren.html" target="_blank">美食达人</a>
+                <span><img src="images/nav_icon.png" width="7" height="7"></span>
+            </li>
+            <li>
+                <a href="meishicaidan.html" target="_blank">美食菜单</a
+            ></li>
+        </ul>
+        <div id="nav_list-1" class="nav_hidden nav_hidden-index">
+            <ul>
+                <li>中华菜谱</li>
+                <li>西式菜谱</li>
+                <li>韩国料理</li>
+                <li>日本料理</li>
+            </ul>
+        </div>
+        <div id="nav_list-2" class="nav_hidden nav_hidden-us">
+            <ul>
+                <li>肉类食材</li>
+                <li>蔬菜食材</li>
+                <li>水果食材</li>
+            </ul>
+        </div>
+        <div id="nav_list-3" class="nav_hidden nav_hidden-info">
+            <ul>
+                <li>健康咨询</li>
+                <li>健康新闻</li>
+                <li>健康菜谱</li>
+            </ul>
+        </div>
+        <div id="nav_list-4" class="nav_hidden nav_hidden-info nav_hidden-last">
+            <ul>
+                <li>热门达人</li>
+                <li>推荐达人</li>
+            </ul>
+        </div>
+    </div>
+
+        <div class="nav_iput">
+        <input type="text" class="nav_input" placeholder="需找你想要的美味" onFocus="this.placeholder=''" onBlur="this.placeholder='需找你想要的美味'"> <button type="submit" name="sousuo">搜索</button></div>
+    </div>
+</div>
+   <!-- ---------------------------------以上是nav内容--------------------------->
+   <div class="jjc_bg clear">
+       <div class="jjc_topbg clear">
+        <div class="jjc_top" id="allCategoryHeader">
+        <div class="jjc_top_out" id="allCategoryHeaderBox">
+        <b class="a_navbg" style="top: 0px; visibility: hidden;"><s></s></b>
+        <dl flag="0">
+        <dt>
+            <s class="l_1"></s>
+            <h3>
+                <a href="#" target="_blank">美食家居</a>
+            </h3>
+            <p>
+                <a href="#" target="_blank">餐具</a>
+                <a href="#" target="_blank">茶具</a>
+                <a href="#" target="_blank">刀具</a>
+                <a href="#" target="_blank">厨具</a>
+            </p>
+            <i></i>
+            </dt>
+        <dd style="display: none;">
+        <div class="jjc_toplist">
+        <div class="sort2">
+            <a href="#" style="color:#cc0000;" target="_blank">模具</a>
+            <a href="#"  target="_blank">杯子</a>
+            <a href="#" style="color:#cc0000;" target="_blank">锅</a>
+            <a href="#"  target="_blank">碗</a>
+            <a href="#"  target="_blank">水壶</a>
+            <a href="#"  target="_blank">筷子</a>
+            <a href="#"  target="_blank">勺子</a>
+            <a href="#"  target="_blank">碟子</a>
+        </div>
+        </div>
+        </dd>
+        </dl>
+         <dl flag="1">
+            <dt>
+                <s class="l_2"></s>
+                <h3>
+                <a href="#" target="_blank">厨房电器</a>
+                                </h3>
+                <p>
+                <a href="#" target="_blank">压力锅</a>
+                <a href="#" target="_blank">微波炉</a>
+                <a href="#" target="_blank">电磁炉</a>
+                </p>
+                <i></i>
+            </dt>
+            <dd style="display: none;">
+                <div class="jjc_toplist">
+                    <div class="sort2">
+                        <a href="#" style="color:#cc0000;" target="_blank">烤箱</a>
+                        <a href="#"  target="_blank">面包机</a>
+                        <a href="#"  target="_blank">洗碗机</a>
+                        <a href="#"  target="_blank">料理机</a>
+                        <a href="#"  target="_blank">豆浆机</a>
+                        <a href="#"  target="_blank">电饼锅</a>
+                        <a href="#"  target="_blank">电压力锅</a>
+                        <a href="#"  target="_blank">榨汁机</a>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+            <dl flag="2">
+            <dt>
+                <s class="l_3"></s>
+                <h3>
+                    <a href="#" target="_blank">厨房料理</a>
+                </h3>
+                <p>
+                    <a href="#" target="_blank">中式料理</a>
+                    <a href="#" target="_blank">西式料理</a>
+                </p>
+                <i></i>
+            </dt>
+            <dd style="display: none;">
+                <div class="jjc_toplist">
+                    <div class="sort2">
+                        <a href="#" style="color:#cc0000;" target="_blank">调料</a>
+                        <a href="#"  target="_blank">火锅底料</a>
+                        <a href="#"  target="_blank">番茄酱</a>
+                        <a href="#"  target="_blank">辣椒酱</a>
+                        <a href="#"  target="_blank">咖喱</a>
+                        <a href="#"  target="_blank">酱油</a>
+                        <a href="#"  target="_blank">醋</a>
+                        <a href="#"  target="_blank">味精</a>
+                    </div>
+                </div>
+            </dd>
+        </dl>
+        <div class="clear"></div>
+        </div>
+        </div>
+           	<div id="jjc_banner" class="jjc_banner">
+			<div class="hd">
+				<ul><li></li><li></li></ul>
+			</div>
+			<div class="bd">
+				<ul>
+					<li><a href="#" target="_blank"><img src="images/jjc_banner.jpg" /></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_banner02.jpg" /></a></li>
+				</ul>
+			</div>
+		</div>
+
+			<script type="text/javascript">
+            jQuery(".jjc_banner").slide({mainCell:".bd ul",autoPlay:true});
+            </script>
+       </div>
+       <div class="jjc_youhui clear">
+       		<h3>精打细算优惠区</h3>
+            <div class="jjc_youhuilist" style="margin-left:30px;">
+            	<a href="#">
+            		<img src="images/jjc_01.jpg">
+                </a>
+                <h5>
+                	<a href="#">半圆蛋糕模</a>
+                </h5>
+                <p>优惠价：<span>19.9元</span></p>
+                <p>限量：5个</p>
+                <div class="jjc_qg">
+                	<a href="#">立即抢购</a>
+                </div>
+            </div>
+            <div class="jjc_youhuilist" style="margin-left:5px;">
+            	<a href="#">
+            		<img src="images/jjc_02.jpg">
+                </a>
+                <h5>
+                	<a href="#">半圆蛋糕模</a>
+                </h5>
+                <p>优惠价：<span>19.9元</span></p>
+                <p>限量：5个</p>
+                <div class="jjc_qg">
+                	<a href="#">立即抢购</a>
+                </div>
+            </div>
+       </div>
+       
+        <!-- ---------------------------------以上是优惠内容--------------------------->
+        <div class="jjc_mid"> 
+        	<h3>精选厨具</h3>
+            <div class="jjc_midlist clear">
+			<div class="hd">
+				<ul>
+                    <li><a href="#"><span class="iconfont">&#xe773;</span>&nbsp;推荐厨具</a></li>
+                    <li><a href="#"><span class="iconfont">&#xe6ac;</span>&nbsp;热门厨具</a></li>
+                    <li><a href="#"><span class="iconfont">&#xf0010;</span>&nbsp;打折厨具</a></li>
+                </ul>
+			</div>
+			<div class="bd clear">
+				<ul class="clear">
+					<li><a href="#" target="_blank"><img src="images/jjc_03.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_04.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_05.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_06.jpg"></a></li>
+				</ul>
+				<ul>
+					<li><a href="#" target="_blank"><img src="images/jjc_07.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_08.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_09.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_10.jpg"></a></li>
+				</ul>
+				<ul>
+					<li><a href="#" target="_blank"><img src="images/jjc_11.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_12.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_13.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_14.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+        <h3>精选电器</h3>
+            <div class="jjc_midlist clear">
+			<div class="hd">
+				<ul>
+                    <li><a href="#"><span class="iconfont">&#xe773;</span>&nbsp;推荐电器</a></li>
+                    <li><a href="#"><span class="iconfont">&#xe6ac;</span>&nbsp;热门电器</a></li>
+                    <li><a href="#"><span class="iconfont">&#xf0010;</span>&nbsp;打折电器</a></li>
+                </ul>
+			</div>
+			<div class="bd clear">
+				<ul class="clear">
+					<li><a href="#" target="_blank"><img src="images/jjc_dq01.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq02.png"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq03.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq04.jpg"></a></li>
+				</ul>
+				<ul>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq05.png"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq06.png"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq07.png"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq08.png"></a></li>
+				</ul>
+				<ul>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq09.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq10.jpg"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq11.png"></a></li>
+					<li><a href="#" target="_blank"><img src="images/jjc_dq12.jpg"></a></li>
+				</ul>
+			</div>
+		</div>
+    </div>   
+ 	<div class="idx_btmbg clear">
+    	<div class="idx_btm">
+            <ul class="idx_btmnews">
+                <li><em>懂得生活的人，天天都来这里</em></li>
+            </ul>
+            <ul class="idx_btmmain clear">
+                <li><a href="#">公司简介</a></li>
+                <li><a href="#">企业文化</a></li>
+                <li><a href="#">招贤纳士</a></li>
+                <li><a href="#">免责声明</a></li>
+                <li><a href="#">联系我们</a></li>
+                <li><a href="#">友情链接</a></li>
+            </ul>
+            <p>京ICP证150335号/京公网安备11010802009977 Copyright © 2003-2016 yangshimeishi CO.,LTD.</p>
+       </div>
+    </div>
+    <!-- ---------------------------------以上是版权内容--------------------------->
+<div id="share">
+<a id="totop" title=""></a>
+<a href="#" target="_blank" class="sina"></a>
+<a href="#"  target="_blank" class="tencent"></a>
+</div>
+<!-- ---------------------------------以上是GOTOP内容--------------------------->
+</body>
+    <script type="text/javascript">
+	$(function(){
+	$('#allCategoryHeaderBox dl').each(function(){
+
+	$(this).hover(
+	function(){
+	//
+	$(this).addClass('curr');
+	$(this).find('dd').show();
+	$('#allCategoryHeaderBox .a_navbg').css({'top': ($(this).attr('flag') * 93) + 'px', 'visibility': 'visible'});
+	},
+	function(){
+	//
+	$(this).removeClass('curr');
+	$(this).find('dd').hide();
+	$('#allCategoryHeaderBox .a_navbg').css({'top':  '0px', 'visibility': 'hidden'});
+	}
+	);
+	});
+	});
+	</script>
+    <script type="text/javascript">jQuery(".jjc_midlist").slide({effect:"fade"});
+ </script>
+ <script>
+$(function(){
+        $("#totop").hide();
+        $(function () {
+            $(window).scroll(function(){
+                if ($(window).scrollTop()>100){
+                    $("#totop").fadeIn();
+                }
+                else
+                {
+                    $("#totop").fadeOut();
+                }
+            });
+            $("#totop").click(function(){
+                $('body,html').animate({scrollTop:0},500);
+                return false;
+            });
+        });
+    }); 
+</script>
+</html>
